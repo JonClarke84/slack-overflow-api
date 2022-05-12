@@ -4,7 +4,7 @@ const path = require("path")
 const cors = require('cors')
 
 app.use(cors({
-  origin: '*',
+  origin: 'https://frozen-atoll-68777.herokuapp.com/',
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 }))
 
