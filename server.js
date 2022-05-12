@@ -8,6 +8,10 @@ app.use(cors({
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 }))
 
+app.get('/allow-cors', function(request, response) {
+  response.set('Access-Control-Allow-Origin', 'https://frozen-atoll-68777.herokuapp.com')
+})
+
 app.use(express.json())
 
 const sessionsRouter = require("./routes/sessions")
