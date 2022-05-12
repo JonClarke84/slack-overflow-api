@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "npm install",
-    "start": "nod bin/www",
+    "start": "node bin/www",
     "start:test": "nodemon bin/www-test"
   },
   "keywords": [],
