@@ -9,7 +9,7 @@ app.use(cors({
 }))
 
 app.get('/allow-cors', function(request, response) {
-  response.set('Access-Control-Allow-Origin', 'https://frozen-atoll-68777.herokuapp.com')
+  response.set('Access-Control-Allow-Origin', '*')
 })
 
 app.use(express.json())
